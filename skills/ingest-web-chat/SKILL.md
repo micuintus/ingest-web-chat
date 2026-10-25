@@ -16,11 +16,11 @@ into wiki pages.
 
 ## Usage
 
-Run from this skill directory. `node_modules` is not installed for you, so on
-a fresh clone run `npm install --ignore-scripts` here once.
+Run from this skill directory. `pi install` provides the dependencies; in a
+plain clone, run `npm install` once at the repository root.
 
 ```bash
-./node_modules/.bin/tsx ingest.ts "<chat-url>" --out <project-with-llm-wiki>
+node --import tsx ingest.ts "<chat-url>" --out <project-with-llm-wiki>
 ```
 
 `--out` must point at a project containing `llm-wiki/`. The script walks

@@ -1,6 +1,6 @@
 {
   "name": "@micuintus/ingest-web-chat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pi skill: ingest a web LLM chat by URL into markdown via CDP-driven Chrome.",
   "keywords": [
     "pi-package",
@@ -15,5 +15,16 @@
     "skills",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "type": "module",
+  "dependencies": {
+    "rebrowser-playwright-core": "1.52.0",
+    "tsx": "4.21.0",
+    "turndown": "7.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "25.6.0",
+    "@types/turndown": "5.0.6",
+    "typescript": "5.9.3"
+  }
 }
